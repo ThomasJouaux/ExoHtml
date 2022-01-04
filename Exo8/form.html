@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <p>Vos coordonnées</p>
+    <!--Formulaire-->
+ <form action="http://bienvu.net/script.php" method="get">
+    <label for="nom">Votre nom*</label><input type="text" name="nom" id="nom"> <br>
+    <label for="prénom">Votre prénom*</label><input type="text" name="prénom" id="prénom"><br>
+    <br>
+    Sexe*<input type="radio" name="Féminin" value="Femme"> Féminin<input type="radio" name="Masculin" value="Homme"> Masculin <br>
+    <br>
+    <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="DateNaissance"><br>
+    <label for="adresse" name="Adresse" value="Adresse">Adresse :</label><input type="text" name="Adresse" value=""><br>
+    <label for="ville" name="ville" value="ville">Ville :</label><input type="text" name=Adresse value=""><br>
+    <label for="Email" name="Email" value="mail">Email* :</label><input type="text" name=Email placeholder="dave.loper@afpa.fr"><br>
+    <br>
+    <p>Votre demande</p>
+      <!--Menu deroulant-->
+    <label for="demande">Sujet* :</label>
+     <select id="sujet">
+     <option value="Sujet" selected disabled>Selectionnez un sujet</option>
+     <option value="commandes">Mes commandes</option>
+     <option value="Question">Questions sur un produit</option>
+     <option value="reclamation">Réclamations</option>
+     <option value="autres">Autres</option></select><br>
+    <!--zone de texte-->
+    Votre question*: <textarea name="question"></textarea><br>
+    <!--case a coché -->
+    <input type="checkbox" name="validation" value="valide"> * J'accepte le traitement informatique de ce formulaire <br>
+    <input type="submit" value="Envoyer"><input type="reset" value="Annuler">   
+ </form>
+</body>
+</html>
